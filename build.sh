@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-DOCKER_BUILDKIT=0 docker build -t "kuqoi/pnpm:7.1.3-alpine" .
+VERSION=7.1.5
 
-docker tag kuqoi/pnpm:7.1.3-alpine kuqoi/pnpm:alpine
-docker tag kuqoi/pnpm:7.1.3-alpine kuqoi/pnpm:7-alpine
-docker tag kuqoi/pnpm:7.1.3-alpine kuqoi/pnpm:7.1-alpine
+DOCKER_BUILDKIT=0 docker build -t "kuqoi/pnpm:$VERSION-alpine" .
+
+docker tag kuqoi/pnpm:$VERSION-alpine kuqoi/pnpm:alpine
+docker tag kuqoi/pnpm:$VERSION-alpine kuqoi/pnpm:7-alpine
+docker tag kuqoi/pnpm:$VERSION-alpine kuqoi/pnpm:7.1-alpine
