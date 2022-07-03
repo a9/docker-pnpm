@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-VERSION=7.5.0
+source ./env.sh
 
-DOCKER_BUILDKIT=0 docker build -t "kuqoi/pnpm:$VERSION-alpine" .
+DOCKER_BUILDKIT=0 docker build -t "$TAG" .
 
-docker tag kuqoi/pnpm:$VERSION-alpine kuqoi/pnpm:alpine
-docker tag kuqoi/pnpm:$VERSION-alpine kuqoi/pnpm:7-alpine
-docker tag kuqoi/pnpm:$VERSION-alpine kuqoi/pnpm:7.5-alpine
+docker tag $TAG $TAG_MAJOR
+docker tag $TAG $TAG_MINOR
+docker tag $TAG $TAG_PATCH
