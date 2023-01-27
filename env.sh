@@ -3,8 +3,8 @@
 export NAME=kuqoi/pnpm
 export VERSION=alpine
 export VERSION_MAJAR=7-alpine
-export VERSION_MINOR=7.25-alpine
-export VERSION_PATCH=7.25.0-alpine
+export VERSION_MINOR=7.26-alpine
+export VERSION_PATCH=7.26.0-alpine
 
 export TAG="${NAME}:${VERSION}"
 export TAG_MAJOR="${NAME}:${VERSION_MAJAR}"
