@@ -2,9 +2,9 @@
 
 source ./env.sh
 
-docker build -t "$TAG" .
+docker --debug build -t "$TAG_PATCH" .
 
-docker tag $TAG $TAG_MAJOR
-docker tag $TAG $TAG_MINOR
-docker tag $TAG $TAG_PATCH
-docker tag $TAG $ALIYUN_TAG_PATCH
+# docker tag $TAG_PATCH $TAG
+# docker tag $TAG_PATCH $TAG_MAJOR
+# docker tag $TAG_PATCH $TAG_MINOR
+docker tag $TAG_PATCH $ALIYUN_TAG_PATCH
