@@ -6,4 +6,4 @@ source ./env.sh
 # docker push $TAG_MAJOR
 # docker push $TAG_MINOR
 docker push $TAG_PATCH
-docker push $TAG_PATCH
+docker push $ALIYUN_TAG_PATCH
