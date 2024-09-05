@@ -5,6 +5,6 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     npm config set registry https://registry.npmmirror.com/; \
     rm -rf /opt/yarn*; \
     rm -rf /usr/local/bin/yarn*; \
-    npm install -g pnpm@8.15.9; \
+    npm install -g pnpm@9.9.0; \
     rm -rf ~/.npm; \
     pnpm config set enable-pre-post-scripts true;
